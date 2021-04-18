@@ -33,14 +33,17 @@ export default {
 #app {
   text-align: center;
   margin: 60px;
-  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 
 #buttons {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  align-content: center;
-  align-items: stretch;
+  align-items: center;
 }
 </style>

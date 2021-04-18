@@ -29,7 +29,8 @@ export default {
   box-shadow: 0 0 0 1px #00AD8B;
   cursor: pointer;
   margin-bottom: 20px;
-  max-width: 25%;
+  align-self: stretch;
+  max-width: 350px;
 }
 @media screen and (max-width: 620px) {
   .btn {
