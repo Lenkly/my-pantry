@@ -1,4 +1,4 @@
-# manga-list
+# my-pantry
 
 ## Project setup
 ```
