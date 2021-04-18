@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.jpg">
+    <Intro msg="What's in my pantry?!" name="Christian"/>
+
+  <div id="buttons">
+    <Button :onClick="clickButton" text="Have a look!" />
+    <Button :onClick="clickButton" text="Change User" disabled />
+    </div>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Intro from './components/Intro.vue'
+import Button from './components/Button.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Intro,
+    Button
+  },
+  methods: {
+    clickButton() {
+      alert('my pantry is empty at the moment 🥺')
+    }
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 60px;
+  
+}
+
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: stretch;
 }
 </style>
