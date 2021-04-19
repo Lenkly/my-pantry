@@ -26,7 +26,7 @@ export default {
   padding: 10px 15px;
   color: white;
   background-color: #00AD8B;
-  box-shadow: 0 0 0 1px #00AD8B;
+  box-shadow: 0 0 5px 2px #00AD8B;
   cursor: pointer;
   margin-bottom: 20px;
   align-self: stretch;
@@ -39,10 +39,12 @@ export default {
 }
 .btn:hover {
   transform: translateY(-2px); 
+  box-shadow: 0 2px 5px 2px #00AD8B;
 }
 .btn:disabled {
   opacity: 0.5;
   transform: translateY(0);
+  box-shadow: 0 0 5px 2px #00AD8B;
   cursor: not-allowed;
 }
 </style>
