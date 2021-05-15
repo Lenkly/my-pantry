@@ -2,19 +2,19 @@
   <div class="cardcontainer">
     <h1 style="margin-bottom: 30px">Beispiel-Cards</h1>
     <div id="cards">
-<Card heading="Kaffee" inStock="Das ist ein Beispieltext, lol." :onClick="clickCard" />
-<Card heading="Dr. Oetker rote Grütze Himbeere und Waldmeister hmmmmm" inStock="Das ist ein Beispieltext, lol." :onClick="clickCard" />
-<Card heading="Gewürzgurken vom Aldi" inStock="Das ist ein Beispieltext, lol." :onClick="clickCard" />
-<Card heading="Deine Mudda im Glas, voll spezial" inStock="Das ist ein Beispieltext, lol." :onClick="clickCard" />
-<Card heading="Puderzucker" inStock="Das ist ein Beispieltext, lol." :onClick="clickCard" />
-<Card heading="Tempura" inStock="Das ist ein Beispieltext, lol." :onClick="clickCard" />
-<Card heading="Tomatensaft" inStock="Das ist ein Beispieltext, lol." :onClick="clickCard" />
-<Card heading="Getrocknete Tomaten ohne Öl" inStock="Das ist ein Beispieltext, lol." :onClick="clickCard" />
-<Card heading="Tuc Kekse mit Paprikageschmack" inStock="Das ist ein Beispieltext, lol." :onClick="clickCard" />
-<Card heading="Backpulver" inStock="1 Bazillion!!!" :onClick="clickCard" />
-<Card heading="Grillgewürz aus Kanada" inStock="Das ist ein Beispieltext, lol." :onClick="clickCard" />
-<Card heading="Eine selbstgebackene Torte" inStock="3/4 Teil" :onClick="clickCard" />
-<Card heading="Sriracha" inStock="Das ist ein Beispieltext, lol." :onClick="clickCard" />
+<Card heading="Kaffee" inStock="Das ist ein Beispieltext, lol." />
+<Card heading="Dr. Oetker rote Grütze Himbeere und Waldmeister hmmmmm" inStock="Das ist ein Beispieltext, lol." />
+<Card heading="Gewürzgurken vom Aldi" inStock="Das ist ein Beispieltext, lol." />
+<Card heading="Deine Mudda im Glas, voll spezial" inStock="Das ist ein Beispieltext, lol." />
+<Card heading="Puderzucker" inStock="Das ist ein Beispieltext, lol." />
+<Card heading="Tempura" inStock="Das ist ein Beispieltext, lol." />
+<Card heading="Tomatensaft" inStock="Das ist ein Beispieltext, lol." />
+<Card heading="Getrocknete Tomaten ohne Öl" inStock="Das ist ein Beispieltext, lol." />
+<Card heading="Tuc Kekse mit Paprikageschmack" inStock="Das ist ein Beispieltext, lol." />
+<Card heading="Backpulver" inStock="1 Bazillion!!!" />
+<Card heading="Grillgewürz aus Kanada" inStock="Das ist ein Beispieltext, lol." />
+<Card heading="Eine selbstgebackene Torte" inStock="3/4 Teil" />
+<Card heading="Sriracha" inStock="Das ist ein Beispieltext, lol." />
   </div>
   </div>
 </template>
@@ -27,11 +27,6 @@ export default {
   components: {
     Card
   },
-  methods: {
-    clickCard() {
-      alert('not available in your country')
-    }
-  }
 }
 </script>
 
@@ -44,4 +39,6 @@ export default {
   -webkit-column-gap: 20px;
   column-gap: 20px;
 }
+
+  
 </style>
