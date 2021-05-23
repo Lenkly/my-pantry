@@ -2,10 +2,13 @@
   <div class="intro">
     <h1>{{ msg }}</h1>
     <p>
-      <span style="font-weight: 700">{{ name === 'Christian' ? 'Christian' : `${name}` }}</span>, please look into the pantry list first before you buy the 30th package of baking soda.
+      <span style="font-weight: 700">{{
+        name === 'Christian' ? 'Christian' : `${name}`
+      }}</span
+      >, please look into the pantry list first before you buy the 30th package
+      of baking soda.
     </p>
     <h3>Let's start!</h3>
-    
   </div>
 </template>
 

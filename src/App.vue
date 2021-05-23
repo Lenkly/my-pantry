@@ -4,7 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/cards">Cards</router-link>
     </div> -->
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -27,6 +27,6 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #00AD8B;
+  color: #00ad8b;
 }
 </style>

@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="../assets/logo.jpg">
-    <Intro msg="What's in my pantry?!" name="Christian"/>
+    <img alt="Vue logo" src="../assets/logo.jpg" />
+    <Intro msg="What's in my pantry?!" name="Christian" />
 
-  <div id="buttons">
-    <Button :onClick="clickButton" text="Have a look!" />
-    <Button :onClick="clickButton" text="Change User" disabled />
+    <div id="buttons">
+      <Button :onClick="clickButton" text="Have a look!" />
+      <Button :onClick="clickButton" text="Change User" disabled />
     </div>
   </div>
 </template>
@@ -13,7 +13,6 @@
 <script>
 import Intro from '../components/Intro.vue'
 import Button from '../components/basics/Button.vue'
-
 
 export default {
   name: 'App',

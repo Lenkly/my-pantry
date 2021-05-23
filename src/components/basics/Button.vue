@@ -1,5 +1,5 @@
 <template>
-<button type="text" class="btn" v-on:click="onClick">{{ text }}</button>
+  <button type="text" class="btn" v-on:click="onClick">{{ text }}</button>
 </template>
 
 <script>
@@ -15,18 +15,17 @@ export default {
 }
 </script>
 
-
 <style scoped>
 .btn {
   display: inline-block;
-  white-space:nowrap;
+  white-space: nowrap;
   font-size: 20px;
   border: solid 2px white;
   border-radius: 8px;
   padding: 10px 15px;
   color: white;
-  background-color: #00AD8B;
-  box-shadow: 0 0 5px 2px #00AD8B;
+  background-color: #00ad8b;
+  box-shadow: 0 0 5px 2px #00ad8b;
   cursor: pointer;
   margin-bottom: 20px;
   align-self: stretch;
@@ -38,13 +37,13 @@ export default {
   }
 }
 .btn:hover {
-  transform: translateY(-2px); 
-  box-shadow: 0 2px 5px 2px #00AD8B;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px 2px #00ad8b;
 }
 .btn:disabled {
   opacity: 0.5;
   transform: translateY(0);
-  box-shadow: 0 0 5px 2px #00AD8B;
+  box-shadow: 0 0 5px 2px #00ad8b;
   cursor: not-allowed;
 }
 </style>

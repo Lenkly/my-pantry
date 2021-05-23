@@ -1,67 +1,45 @@
 <template>
   <div id="card">
-<div class="crd" v-on:click="showModal = true">
-    <h3>{{ heading }}</h3>
-    <p>{{ inStock }}</p>
+    <div class="crd" v-on:click="onClick">
+      <h3>{{ heading }}</h3>
+      <p>{{ inStock }}</p>
     </div>
-    <transition>
-      <div class="modal-overlay" 
-         v-if="showModal" 
-         v-on:close-modal="showModal = false"></div>
-    </transition>
-    <transition name="pop" appear>
-    <div class="modal" 
-         role="dialog" 
-         v-if="showModal"
-         >
-      <h1>Vue Transitions</h1>
-      <p>The <code>&lt;transition&gt;</code> component in Vue can create wonderful animated entrances and exits.</p>
-      <button v-on:click="closeModal()" class="button">Hide Modal</button>
-
-    </div>
-  </transition>
   </div>
 </template>
 
 <script>
-
 import Modal from './Modal'
+import Button from './Button'
 
 export default {
-name: 'Card',
-components: Modal,
-props: {
+  name: 'Card',
+  components: Modal,
+  Button,
+  props: {
     heading: String,
-    inStock: String
-},
-data() {
-    return {
-      modal: false
-    };
-  },
-methods : {
-        closeModal() {
-            this.$emit('closeModal');
-        }
+    inStock: String,
+    onClick: {
+      type: Function
     }
+  }
 }
 </script>
 
 <style scoped>
 .crd {
-    display: inline-block;
-    padding: 10px 15px;
-    border: white solid 2px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px 3px #00AD8B;
-    background-color: rgba(255, 255, 255, 0.3);
-    margin-bottom: 20px;
-    width: 264px;
+  display: inline-block;
+  padding: 10px 15px;
+  border: white solid 2px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 3px #00ad8b;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 20px;
+  width: 264px;
 }
 .crd:hover {
-  transform: translateY(-2px); 
+  transform: translateY(-2px);
   background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 3px 5px 3px #00AD8B;
+  box-shadow: 0 3px 5px 3px #00ad8b;
 }
 /* @media screen and (min-width: 568px) {
   .crd {
@@ -69,14 +47,14 @@ methods : {
   }
 } */
 h3 {
-    display: -webkit-box;
+  display: -webkit-box;
   -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;  
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 p {
-font-size: 14px;
-font-weight: 200;
+  font-size: 14px;
+  font-weight: 200;
 }
 
 .modal {
@@ -94,7 +72,7 @@ font-weight: 200;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-  background: #FFF;
+  background: #fff;
   z-index: 999;
   transform: none;
 }
@@ -119,7 +97,7 @@ font-weight: 200;
 /* ---------------------------------- */
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity .4s linear;
+  transition: opacity 0.4s linear;
 }
 
 .fade-enter,
