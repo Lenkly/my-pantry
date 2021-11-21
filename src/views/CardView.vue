@@ -2,6 +2,12 @@
   <div class="cardcontainer">
     <h1 style="margin-bottom: 30px">Beispiel-Cards</h1>
     <div id="cards">
+      <!-- <Card
+        onClick="toggleOpen"
+        v-bind:class="{ 'is-open': open }"
+        heading="{{cards.name}}"
+        inStock="{{cards.description}}"
+      /> -->
       <Card heading="Kaffee" inStock="Das ist ein Beispieltext, lol." />
       <Card
         heading="Dr. Oetker rote Grütze Himbeere und Waldmeister hmmmmm"
@@ -51,14 +57,28 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 import Card from '../components/basics/Card.vue'
 import Modal from '../components/basics/Modal.vue'
 
 export default {
   name: 'App',
-  data: () => ({
-    open: false
-  }),
+  data() {
+    return {
+      open: false,
+      cards: []
+    }
+  },
+  async created() {
+    try {
+      const res = await axios.get(`http://localhost:3000/cards`)
+
+      this.cards = res.data
+    } catch (e) {
+      console.error(e)
+    }
+  },
   components: {
     Card,
     Modal
@@ -79,5 +99,12 @@ export default {
   -moz-column-gap: 20px;
   -webkit-column-gap: 20px;
   column-gap: 20px;
+}
+@media screen and (max-width: 620px) {
+  #cards {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
 }
 </style>

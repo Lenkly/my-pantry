@@ -35,6 +35,7 @@ export default {
   background-color: rgba(255, 255, 255, 0.3);
   margin-bottom: 20px;
   width: 264px;
+  transition: all 0.5s ease;
 }
 .crd:hover {
   transform: translateY(-2px);

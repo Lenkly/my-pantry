@@ -1,0 +1,76 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "name": "Kaffee",
+      "description": "Das ist ein Beispieltext, lol.",
+      "amount": "2 Stück"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Oetker rote Grütze Himbeere und Waldmeister hmmmmm",
+      "description": "Das ist ein Beispieltext, lol.",
+      "amount": "23 Stück"
+    },
+    {
+      "id": 3,
+      "name": "Gewürzgurken vom Aldi",
+      "description": "Das ist ein Beispieltext, lol.",
+      "amount": "2 Gläser"
+    },
+    {
+      "id": 4,
+      "name": "Deine Mudda im Glas, voll spezial",
+      "description": "Das ist ein Beispieltext, lol.",
+      "amount": "so viele lol"
+    },
+    {
+      "id": 5,
+      "name": "Puderzucker",
+      "description": "Das ist ein Beispieltext, lol.",
+      "amount": "1 Stück"
+    },
+    {
+      "id": 6,
+      "name": "Tempura",
+      "description": "Das ist ein Beispieltext, lol.",
+      "amount": "1 große Packung"
+    },
+    {
+      "id": 7,
+      "name": "Tomatensaft",
+      "description": "Das ist ein Beispieltext, lol.",
+      "amount": "2"
+    },
+    {
+      "id": 8,
+      "name": "Getrocknete Tomaten ohne Öl",
+      "description": "Das ist ein Beispieltext, lol.",
+      "amount": "3 kleine Sachees"
+    },
+    {
+      "id": 9,
+      "name": "Tuc Kekse mit Paprikageschmack",
+      "description": "Das ist ein Beispieltext, lol.",
+      "amount": "lecker"
+    },
+    {
+      "id": 10,
+      "name": "Backpulver",
+      "description": "Das ist ein Beispieltext, lol.",
+      "amount": "1 Bazillion!!!"
+    },
+    {
+      "id": 11,
+      "name": "Grillgewürz aus Kanada",
+      "description": "Das ist ein Beispieltext, lol.",
+      "amount": "nicht genug"
+    },
+    {
+      "id": 12,
+      "name": "Eine selbstgebackene Torte",
+      "description": "Das ist ein Beispieltext, lol.",
+      "amount": "3/4 Teil"
+    }
+  ]
+}

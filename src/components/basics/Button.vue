@@ -30,6 +30,7 @@ export default {
   margin-bottom: 20px;
   align-self: stretch;
   max-width: 350px;
+  transition: all 0.5s ease;
 }
 @media screen and (max-width: 620px) {
   .btn {
